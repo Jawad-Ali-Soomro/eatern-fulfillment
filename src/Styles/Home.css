@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;300;600;900&family=Open+Sans:wght@300;600;800&family=Philosopher&family=Roboto+Slab:wght@100;200;300;400;500;900&family=Roboto:ital,wght@0,300;0,500;0,700;0,900;1,100&display=swap');
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col {
+    flex-direction: column;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.header {
+    height: 12vh;
+    width: 100%;
+    gap: 50px;
+    background: #37517e;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.header .logo{
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 50px;
+    font-family: 'Open Sans';
+    color: inherit;
+}
+
+.logo span{
+    font-weight: 900;
+    font-family: 'Open Sans';
+}
+
+.header .navs ul{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+.navs ul li a{
+    text-decoration: none;
+    padding: 10px;
+    transition: .3s;
+    font-weight: 600;
+    font-family: 'Open Sans';
+    color: inherit;
+}
+
+.navs ul li:hover a{
+    background: rgba(255, 255, 255, 0.089);
+    border-radius: 5px;
+}
+
+.navs button{
+    width: 150px;
+    height: 50px;
+    border: 2px solid #47b2e4;
+    color: white;
+    background: transparent;
+    border-radius: 25px;
+    font-weight: 600;
+    margin-left: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.hero{
+    margin-top: 10vh;
+    height: 70vh;
+    background: #37517e;
+}
+
+.hero-content{
+    align-items: start;
+    padding-left: 50px;
+    color: white;
+    gap: 20px;
+}
+
+.hero-content h1{
+    font-size: 3rem;
+    max-width: 400px;
+}
+
+.hero-content p{
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.719);
+}
+
+.hero-content .buttons{
+    width: 400px;
+    justify-content: start;
+    gap: 10px;
+}
+
+.buttons .watch-video-btn{
+    font-size: 1.1rem;
+    background: transparent;
+    border: none;
+    color: white;
+    gap: 5px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.buttons .watch-video-btn i{
+    font-size: 2.5rem;
+}
+
+
+.buttons .btn-start{
+    width: 150px;
+    height: 50px;
+    background: #47b2e4;
+    color: white;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.hero-image img{
+    width: 500px;
+    animation: animate 2s infinite linear;
+}
+
+@keyframes animate {
+    50%{transform: translateY(20px);}
+}
+
+.work-flow{
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    width: 100%;
+    background: #eee;
+}
+
+.work-flow .work-image img{
+    width: 500px;
+}
+
+.work-flow .work-content{
+    align-items: start;
+    gap: 10px;
+}
+
+.work-content h1{
+    font-weight: 300;
+    color: #37517e;
+}
+
+.work-content h1 span{
+    font-weight: 600;
+}
+
+.work-content h4{
+    color: #37517eb9;
+    font-weight: 600;
+}
+
+.work-flow .work-content p{
+    max-width: 550px;
+    color: #37517e;
+}
+
+.work-steps{
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.work-steps .step{
+    width: 500px;
+    height: 50px;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.work-steps .step .numbering{
+    gap: 20px;
+}
+
+.numbering p{
+    font-weight: 900;
+    color: #47b2e4;
+    font-size: 1.2rem;
+}
+
+.numbering p span{
+    font-weight: 600;
+    color: #343a40;
+    padding-left: 20px;
+    font-size: 1.2rem;
+}
+
+.work-steps .step img{
+    font-size: 1.2rem;
+    color: #37517E;
+    font-size: 24px;
+}
+
+.services {
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    background: white;
+    color: black;
+}
+
+.services .service-step{
+    padding: 0px 20px;
+    gap: 50px;
+}
+
+
+.service-step .main-step {
+    width: 160px;
+    height: 160px;
+    gap: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.main-step:hover{
+    background: #eee;
+}
+
+.main-step .icon{
+    font-size: 32px;
+}
+
+.main-step p{
+    font-size: 22px;
+    font-weight: 600;
+    font-family: 'Open Sans';
+}
+
+.services-main{
+    width: 90%;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    transition: .5s;
+}
+
+.services-main img{
+    width: 316px;
+}
+
+.services .main-service-intro{
+    width: 90%;
+    margin-top: 5vh;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    color: #444444;
+    font-weight: 600;
+}
+
+.services .service-content{
+    align-items: start;
+    gap: 20px;
+    padding-top: 2vh;
+}
+
+.service-content h1{
+    font-size: 36px;
+    font-weight: 600;
+    color: #37517E;
+    font-family: 'Open Sans';
+}
+
+.service-content .tick{
+    color: #37517E;
+    font-size: 24px;
+}
+
+.service-content p{
+    font-size: 20px;
+}
